@@ -1,16 +1,16 @@
-name: CI
-on: push
-jobs:
-  build:
-    runs-on: [frontend]
-    steps:
-      - name: Checkout code # ← Step 표시 이름
-        uses: actions/checkout@v4
+# name: CI
+# on: push
+# jobs:
+#   build:
+#     runs-on: [frontend]
+#     steps:
+#       - name: Checkout code # ← Step 표시 이름
+#         uses: actions/checkout@v4
 
-      - name: build
-        run: echo "demo-fe build!"
-  deploy:
-    runs-on: [frontend]
-    needs: build
-    steps:
-      - run: echo "deploy!"
+#       - name: build
+#         run: echo "demo-fe build!"
+#   deploy:
+#     runs-on: [frontend]
+#     needs: build
+#     steps:
+#       - run: echo "deploy!"
